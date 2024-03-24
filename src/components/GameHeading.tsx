@@ -11,15 +11,14 @@ function GameHeading({ gameQuery }: Props) {
   const genres = useGenres();
   const platforms = usePlatforms();
 
-  const platformName = gameQuery.platformId
-    ? platforms.data.results.find(
-        (platform) => platform.id === gameQuery.platformId
-      )?.name
-    : "";
+  const platformName =
+    platforms.data.results.find(
+      (platform) => platform.id === gameQuery.platformId
+    )?.name || "";
 
-  const genreName = gameQuery.genreId
-    ? genres.data.results.find((genre) => genre.id === gameQuery.genreId)?.name
-    : "";
+  const genreName =
+    genres.data.results.find((genre) => genre.id === gameQuery.genreId)?.name ||
+    "";
 
   const header = `${platformName} ${genreName || ""} Games`;
 
