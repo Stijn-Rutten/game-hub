@@ -3,7 +3,7 @@ import { BsChevronDown } from "react-icons/bs";
 import usePlatforms from "../hooks/usePlatforms";
 
 interface Props {
-  selectedPlatformId: number | null;
+  selectedPlatformId?: number;
   onPlatformSelected: (platformId: number) => void;
 }
 
