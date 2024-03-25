@@ -11,7 +11,7 @@ import { SiNintendo } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 import { HStack, Icon } from "@chakra-ui/react";
 import { IconType } from "react-icons/lib";
-import { Platform } from "../hooks/usePlatforms";
+import { Platform } from "../models/platform";
 
 const PlatformIconList = ({ platforms }: { platforms: Platform[] }) => {
   const iconMap: { [key: string]: IconType } = {
