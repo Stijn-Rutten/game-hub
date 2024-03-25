@@ -1,6 +1,6 @@
 import { Badge } from "@chakra-ui/react";
 
-function CriticScore({ score }: { score: number }) {
+const CriticScore = ({ score }: { score: number }) => {
   const color = score > 75 ? "green" : score > 60 ? "yellow" : "";
 
   return (
@@ -8,6 +8,6 @@ function CriticScore({ score }: { score: number }) {
       {score}
     </Badge>
   );
-}
+};
 
 export default CriticScore;

@@ -4,7 +4,7 @@ import useGenre from "../hooks/useGenre";
 import usePlatform from "../hooks/usePlatform";
 import useGameQueryStore from "../store";
 
-function GameHeading() {
+const GameHeading = () => {
   const platformId = useGameQueryStore((s) => s.gameQuery.platformId);
   const genreId = useGameQueryStore((s) => s.gameQuery.genreId);
 
@@ -18,6 +18,6 @@ function GameHeading() {
       {header}
     </Heading>
   );
-}
+};
 
 export default GameHeading;

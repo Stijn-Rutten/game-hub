@@ -13,7 +13,7 @@ import { HStack, Icon } from "@chakra-ui/react";
 import { IconType } from "react-icons/lib";
 import { Platform } from "../hooks/usePlatforms";
 
-function PlatformIconList({ platforms }: { platforms: Platform[] }) {
+const PlatformIconList = ({ platforms }: { platforms: Platform[] }) => {
   const iconMap: { [key: string]: IconType } = {
     playstation: FaPlaystation,
     pc: FaWindows,
@@ -37,6 +37,6 @@ function PlatformIconList({ platforms }: { platforms: Platform[] }) {
       ))}
     </HStack>
   );
-}
+};
 
 export default PlatformIconList;

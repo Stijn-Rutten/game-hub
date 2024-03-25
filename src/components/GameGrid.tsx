@@ -6,7 +6,7 @@ import GameCardContainer from "./GameCardContainer";
 import React from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-function GameGrid() {
+const GameGrid = () => {
   const { data, error, isLoading, fetchNextPage, hasNextPage } = useGames();
   const skeletons = [1, 2, 3, 4, 5, 6];
 
@@ -52,6 +52,6 @@ function GameGrid() {
       </InfiniteScroll>
     </>
   );
-}
+};
 
 export default GameGrid;

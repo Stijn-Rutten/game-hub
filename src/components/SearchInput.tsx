@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { BsSearch } from "react-icons/bs";
 import useGameQueryStore from "../store";
 
-function SearchInput() {
+const SearchInput = () => {
   const ref = useRef<HTMLInputElement>(null);
   const setSearchText = useGameQueryStore((s) => s.setSearchText);
 
@@ -27,6 +27,6 @@ function SearchInput() {
       </InputGroup>
     </form>
   );
-}
+};
 
 export default SearchInput;

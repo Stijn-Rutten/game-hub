@@ -6,7 +6,7 @@ import {
   SkeletonText,
 } from "@chakra-ui/react";
 
-function GenreListSkeleton() {
+const GenreListSkeleton = () => {
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
     <List>
@@ -20,6 +20,6 @@ function GenreListSkeleton() {
       ))}
     </List>
   );
-}
+};
 
 export default GenreListSkeleton;

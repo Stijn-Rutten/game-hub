@@ -4,7 +4,7 @@ import usePlatforms from "../hooks/usePlatforms";
 import usePlatform from "../hooks/usePlatform";
 import useGameQueryStore from "../store";
 
-function PlatformSelector() {
+const PlatformSelector = () => {
   const { data, error } = usePlatforms();
 
   const selectedPlatformId = useGameQueryStore((s) => s.gameQuery.platformId);
@@ -30,6 +30,6 @@ function PlatformSelector() {
       </MenuList>
     </Menu>
   );
-}
+};
 
 export default PlatformSelector;
